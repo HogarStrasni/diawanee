@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 500px;
+	background-image: url('elements/diwanee-cover.png');
+	background-size: 100% 100%;
+
+}
+
+#mobileMenu {
+	display: none;
+	height: 30px;
+	width: 30px;
+}
+
+
+
+
+#content {
+	width: 100%;
+	height: auto;
+}
+
+#titles {
+	width: 100%;
+	height: auto;
+}
+
+.titlesAray {
+	width: 33.33%;
+	height: 300px;
+	float: left;
+	background-color: green;
+}
+
+.titlesAray:hover {
+	background-color: red;
+}
+
+/*#navigation {
+	border: 2px solid red;
+}*/
+
+#navigation nav ul {
+		list-style: none;
+		float: right;
+
+
+}
+
+#navigation nav ul li {
+		list-style: none;
+		float: left;
+		margin-right: 30px;
+
+		
+
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+
+	#mobileMenu {
+		display: block;
+		float: right;
+	}
+
+	#navigation nav ul {
+		display: none;
+	}
+
+
+}

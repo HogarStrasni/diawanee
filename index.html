@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<div id="navigation">
+			<div id="logo"></div>
+			<nav>
+				<div id="mobileMenu"></div>
+				<ul>
+					<li>O NAMA</li>
+					<li>POSLOVI</li>
+					<li>KONTAKT</li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+	
+	<div id="content">
+		<div id="titles">
+			<div class="titlesAray"></div>
+			<div class="titlesAray"></div>
+			<div class="titlesAray"></div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var hamburger = document.getElementById("mobileMenu");
+		hamburger.style.backgroundImage = "url('elements/menu2.png')";
+		var promena = true;
+		var lista = document.getElementsByTagName("ul")[0];
+		hamburger.addEventListener("click", function(){
+			if(promena) {
+				hamburger.style.backgroundImage = "url('elements/eks2.png')";
+				lista.style.display = "block";
+				promena = false;
+			}
+			else {
+				hamburger.style.backgroundImage = "url('elements/menu2.png')";
+				lista.style.display = "none";
+				promena = true;	
+			}
+		})
+	</script>
+
+</body>
+</html>
